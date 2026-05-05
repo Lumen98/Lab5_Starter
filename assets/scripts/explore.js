@@ -11,6 +11,7 @@ function init() {
 
   // Populate voice dropdown
   function populateVoices() {
+    voiceSelect.innerHTML = '';
     const voices = synth.getVoices();
     voices.forEach(function (voice) {
       const option = document.createElement('option');
